@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  schema: "finance_data",
+  description: "Budget 2025"
+}
+
+SELECT 'IT' as stredisko, 'Software' as kategorie, 2000 as plan_mesicne_czk
+UNION ALL
+SELECT 'Marketing', 'Reklama', 6000
+UNION ALL
+SELECT 'Marketing', 'TV Kampaň', 100000
