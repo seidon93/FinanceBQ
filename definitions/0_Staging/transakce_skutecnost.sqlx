@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  schema: "finance_data",
+  description: "Tabulka simulující účetní deník"
+}
+
+SELECT
+  DATE('2025-01-15') as datum_zauectovani, 'IT' as stredisko, 'Software' as kategorie, 1500 as castka_czk
+UNION ALL
+SELECT DATE('2025-01-20'), 'Marketing', 'Reklama', 5000
+UNION ALL
+SELECT DATE('2025-02-10'), 'IT', 'Hardware', 45000
+UNION ALL
+SELECT DATE('2025-02-20'), 'Marketing', 'TV Kampaň', 150000
